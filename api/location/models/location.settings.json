@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "locations",
+  "info": {
+    "name": "location"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "city": {
+      "type": "string"
+    }
+  }
+}

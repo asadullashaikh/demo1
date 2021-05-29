@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "technologies",
+  "info": {
+    "name": "technologies"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "technology": {
+      "type": "string"
+    }
+  }
+}

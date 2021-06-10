@@ -12,6 +12,15 @@
   "attributes": {
     "city": {
       "type": "string"
+    },
+    "technologies": {
+      "via": "locations",
+      "collection": "technologies"
+    },
+    "users": {
+      "via": "locations",
+      "plugin": "users-permissions",
+      "collection": "user"
     }
   }
 }

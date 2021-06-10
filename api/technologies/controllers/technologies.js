@@ -1,8 +1,22 @@
-'use strict';
+const { sanitizeEntity } = require('strapi-utils');
 
-/**
- * Read the documentation (https://strapi.io/documentation/developer-docs/latest/concepts/controllers.html#core-controllers)
- * to customize this controller
- */
+module.exports = {
+  async find(ctx) {
+    let entities;
+    if (ctx.query._q) {
+      entities = await strapi.services.technologies.find(ctx.query);
+      console.log("find")
+    }
 
-module.exports = {};
+    return entities.map(entity => {
+      const technologies = sanitizeEntity(entity, {
+        model: strapi.models.technologies,
+      });
+      if (technologies) {
+        console.log(technologies.users)
+        
+      }
+      return technologies;
+    });
+  },
+};

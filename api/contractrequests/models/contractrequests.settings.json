@@ -11,15 +11,8 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "requesttime": {
+    "Date": {
       "type": "datetime"
-    },
-    "user": {
-      "plugin": "users-permissions",
-      "model": "user"
-    },
-    "status": {
-      "model": "status"
     }
   }
 }

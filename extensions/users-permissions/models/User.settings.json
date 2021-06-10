@@ -60,7 +60,9 @@
       "configurable": false
     },
     "technologies": {
-      "collection": "technologies"
+      "collection": "technologies",
+      "via": "users",
+      "dominant": true
     },
     "experience": {
       "type": "decimal",
@@ -77,8 +79,10 @@
       "plugin": "upload",
       "required": false
     },
-    "location": {
-      "model": "location"
+    "locations": {
+      "collection": "location",
+      "via": "users",
+      "dominant": true
     },
     "status": {
       "type": "enumeration",

@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "technologies",
   "info": {
-    "name": "technologies"
+    "name": "technologies",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -12,6 +13,16 @@
   "attributes": {
     "technology": {
       "type": "string"
+    },
+    "users": {
+      "via": "technologies",
+      "plugin": "users-permissions",
+      "collection": "user"
+    },
+    "locations": {
+      "collection": "location",
+      "via": "technologies",
+      "dominant": true
     }
   }
 }

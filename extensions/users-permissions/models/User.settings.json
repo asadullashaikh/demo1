@@ -79,17 +79,15 @@
       "plugin": "upload",
       "required": false
     },
-    "locations": {
-      "collection": "location",
-      "via": "users",
-      "dominant": true
-    },
     "status": {
       "type": "enumeration",
       "enum": [
         "Available",
         "NotAvailable"
       ]
+    },
+    "location": {
+      "model": "location"
     }
   }
 }

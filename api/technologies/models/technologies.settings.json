@@ -18,11 +18,6 @@
       "via": "technologies",
       "plugin": "users-permissions",
       "collection": "user"
-    },
-    "locations": {
-      "collection": "location",
-      "via": "technologies",
-      "dominant": true
     }
   }
 }

@@ -88,6 +88,9 @@
     },
     "location": {
       "model": "location"
+    },
+    "resume": {
+      "model": "resume"
     }
   }
 }
